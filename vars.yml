@@ -1,0 +1,11 @@
+---
+controller_vip: 10.6.121.55
+vsphere_hostname: 192.168.1.136
+vsphere_username: min.zhang@daocloud.io
+vsphere_password: ZHANGmin73!
+vsphere_datacenter: NDC
+vm_snapshot_name: DCE-4.0.5-34641
+vm_name:
+  - 10-6-121-51
+  - 10-6-121-52
+  - 10-6-121-53
