@@ -7,7 +7,7 @@ DCE_REGISTRY="10.6.181.39"
 
 function login
 {
-    /usr/bin/expect <<EOF
+    /root <<EOF
 	    set timeout 600
         spawn su root
 	    puts "下载安装包"
