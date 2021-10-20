@@ -1,6 +1,6 @@
 set -x
 
-ARCH_VERSION="1.1.0-680"
+ARCH_VERSION="1.2.0-703"
 MASTER_NAME="dce-10-6-181-28"
 WORKER_NAME1="dce-10-6-181-29"
 WORKER_NAME2="dce-10-6-181-30"
@@ -13,7 +13,13 @@ function login
         spawn su root
 	    puts "下载安装包"
 	    expect "]#"
-	    send "wget http://dao-get.daocloud.io/dx-arch-${ARCH_VERSION}.tar.gz\r"
+	    send "sftp 10.6.128.6\r"
+	    expect "password:"
+      send "dangerous\r"
+      expect "sftp>"
+      send "get dx-arch-${ARCH_VERSION}.tar.gz\r"
+      expect "sftp>"
+      send "quit\r"
 	    expect "]#"
 		puts "解压压缩包dx-arch-${ARCH_VERSION}.tar.gz"
 		send "tar xvzf dx-arch-${ARCH_VERSION}.tar.gz\r"
