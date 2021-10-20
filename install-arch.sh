@@ -1,10 +1,10 @@
 set -x
 
 ARCH_VERSION="1.2.0-703"
-MASTER_NAME="dce-10-6-181-28"
-WORKER_NAME1="dce-10-6-181-29"
-WORKER_NAME2="dce-10-6-181-30"
-DCE_REGISTRY="10.6.181.39"
+MASTER_NAME="dce-10-6-128-50"
+WORKER_NAME1="dce-10-6-128-51"
+WORKER_NAME2="dce-10-6-128-52"
+DCE_REGISTRY="10.6.128.169"
 
 function login
 {
@@ -58,7 +58,7 @@ function login
 	    expect "Second Local PV Data Node Name:"
 	    send "${WORKER_NAME1}\r"
 	    expect "y/n]:"
-	    send "n\r"
+	    send "y\r"
 	    expect "Please Enter the Node Name to save the pg backup files on:"
 	    send "${WORKER_NAME2}\r"
 	    expect "y/n]:"
