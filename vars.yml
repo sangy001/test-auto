@@ -4,7 +4,7 @@ vsphere_hostname: 192.168.1.136
 vsphere_username: runwei.zheng@daocloud.io
 vsphere_password: Aa000000.
 vsphere_datacenter: NDC
-vm_snapshot_name: DCE-4.0.6-34940-auto
+vm_snapshot_name: 4.0.6-34940-auto-1
 vm_name:
   - ZRW-master-auto-50
   - ZRW-worker-auto-51
