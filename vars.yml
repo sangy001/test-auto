@@ -2,7 +2,7 @@
 controller_vip: 10.6.128.168
 vsphere_hostname: 192.168.1.136
 vsphere_username: runwei.zheng@daocloud.io
-vsphere_password: Eic/iwoo9Fee9yo
+vsphere_password: Aa000000.
 vsphere_datacenter: NDC
 vm_snapshot_name: DCE-4.0.6-34940-auto
 vm_name:
